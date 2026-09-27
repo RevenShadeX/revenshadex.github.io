@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: url(Blood\ Moon\ Torii\ in\ the\ Mist.webp);
+    background: url("../assets/images/background/Blood Moon Torii in the Mist.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

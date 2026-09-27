@@ -1,8 +1,5 @@
-# About Me — Thisara Sagara
-
-## Hi, I'm Thisara
-
-I'm **Thisara Sagara**, also known online as **RevenShadeX**.
+# About Me — 
+I'm , also known online as **RevenShadeX**.
 
 I am an early-career developer building practical projects while continuing to develop my skills in web development, programming, IT, and cybersecurity.
 
@@ -47,5 +44,4 @@ This profile represents an ongoing learning journey. Projects may vary in maturi
 
 ---
 
-**Thisara Sagara**  
 **RevenShadeX**

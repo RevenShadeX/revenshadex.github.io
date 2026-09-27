@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RevenShadeX | About</title>
+
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="icon" type="image/webp" href="../assets/images/branding/icon.webp">
+</head>
+
+<body>
+<!-- Loading Screen -->
+<div id="loader">
+    <div class="loader-content">
+        <div class="loader-logo">RVNX</div>
+
+        <div class="loader-status" id="loaderStatus">
+            INITIALIZING SYSTEM...
+        </div>
+
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+
+        <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+</div>
+    <!-- =========================
+        BACKGROUND PARTICLES
+    ========================== -->
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <!-- =========================
+        NAVIGATION
+    ========================== -->
+
+    <header>
+
+        <a href="../index.html" class="logo">Reven</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="https://github.com/RevenShadeX?tab=repositories">Projs</a>
+            <a href="skills.html">Skills</a>
+            <!-- CONTACT -->
+            <div class="contact-dropdown">
+
+                <button class="contact-btn">
+                    Contact <span>⌄</span>
+                </button>
+            <div class="contact-menu">
+
+                <a href="https://discord.gg/96Gb3E3VrY"
+                    target="_blank">
+                        <span>◈</span>
+                        Discord
+                    </a>
+
+                <a href="https://github.com/RevenShadeX"
+                    target="_blank">
+                        <span>◉</span>
+                        GitHub
+                    </a>
+
+
+                <a href="https://www.linkedin.com/in/revenshadex/"
+                    target="_blank">
+                        <span>in</span>
+                        LinkedIn
+                    </a>
+
+
+                <a href="https://www.youtube.com/channel/UC4MuUZgjky_bh49rJCM-KyA?sub_confirmation=1"
+                    target="_blank">
+                        <span>▶</span>
+                        YouTube
+                    </a>
+
+                    <a href="mailto:revenshadex@gmail.com">
+                        <span>✉</span>
+                        Email
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- =========================
+        ABOUT
+    ========================== -->
+
+    <main>
+
+        <section id="about">
+            <!-- SECTION HEADER -->
+
+            <div class="about-heading">
+                <p class="small-title">// WHO I AM</p>
+                <h1>
+                    ABOUT <span>ME</span>
+                </h1>
+                <div class="red-line"></div>
+            </div>
+            <!-- CONTENT -->
+            <div class="about-content">
+                <!-- LEFT SIDE -->
+
+                <div class="about-intro">
+                    <p class="greeting">
+                        Hey, I'm
+                    </p>
+                    <h2>
+                        RevenShadeX
+                    </h2>
+
+                    <p class="subtitle">
+                        Developer • Cybersecurity Learner • Creator
+                    </p>
+                </div>
+
+
+
+                <!-- RIGHT SIDE -->
+                <div class="about-text">
+                    <p>
+                        I'm a developer and creator interested in
+                        technology, web development, cybersecurity,
+                        and digital creativity.
+                    </p>
+
+
+                    <p>
+                        I enjoy building things, experimenting with
+                        different technologies, and learning how
+                        systems work behind the scenes.
+                    </p>
+
+
+                    <p>
+                        I'm currently developing my skills in
+                        programming and web development while
+                        exploring cybersecurity and other areas
+                        of technology.
+                    </p>
+
+
+                    <p>
+                        My goal is to keep learning, build useful
+                        projects, and turn the things I learn into
+                        real-world experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                INFO CARDS
+            ========================== -->
+
+            <div class="about-cards">
+                <div class="about-card">
+                    <span class="card-number">01</span>
+                    <h3>DEVELOPMENT</h3>
+                    <p>
+                        Building websites and experimenting
+                        with different programming technologies.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-card">
+                    <span class="card-number">02</span>
+                    <h3>CYBERSECURITY</h3>
+                    <p>
+                        Learning networking, security concepts,
+                        Linux, I value your trust
+                    </p>
+                </div>
+                <div class="about-card">
+                    <span class="card-number">03</span>
+                    <h3>CREATIVE</h3>
+
+                    <p>
+                        Exploring music, digital projects,
+                        design, and other creative ideas.
+                    </p>
+                </div>
+
+            </div>
+            <!-- STATUS -->
+            <div class="status">
+                <span class="stat">●</span>
+                <span>AVAILABLE FOR PROJECTS</span>
+
+            </div>
+        </section>
+
+    </main>
+<script>
+    const loader = document.getElementById("loader");
+    const progress = document.querySelector(".loader-progress");
+    const percent = document.getElementById("loaderPercent");
+    const status = document.getElementById("loaderStatus");
+
+    const messages = [
+        "INITIALIZING SYSTEM...",
+        "LOADING INTERFACE...",
+        "CONNECTING TO RVNX...",
+        "LOADING MODULES...",
+        "SYSTEM READY."
+    ];
+
+    let value = 0;
+    let messageIndex = 0;
+
+    const loading = setInterval(() => {
+        value += Math.floor(Math.random() * 8) + 4;
+
+        if (value >= 100) {
+            value = 100;
+            clearInterval(loading);
+
+            status.textContent = "SYSTEM READY.";
+
+            setTimeout(() => {
+                loader.classList.add("loaded");
+
+                setTimeout(() => {
+                    loader.remove();
+                }, 500);
+            }, 250);
+        }
+
+        progress.style.width = value + "%";
+        percent.textContent = value + "%";
+
+        if (value > 20 && messageIndex === 0) {
+            messageIndex = 1;
+            status.textContent = messages[1];
+        }
+
+        if (value > 40 && messageIndex === 1) {
+            messageIndex = 2;
+            status.textContent = messages[2];
+        }
+
+        if (value > 65 && messageIndex === 2) {
+            messageIndex = 3;
+            status.textContent = messages[3];
+        }
+    }, 70);
+</script>
+</body>
+
+</html>

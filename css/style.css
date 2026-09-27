@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(Blood\ Moon\ Torii\ in\ the\ Mist.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+    background: rgba(10, 10, 10, 0.65);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);    
+
+    border: 1px rgb(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+header > a {
+    color: #e90a0a;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    text-shadow: 0px 0px 5px #e0002a, 0px 0px 20px rgb(255, 0, 0, 0.5);
+
+}
+header > a:hover {
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 20px #ff0000;
+    transition: 0.3s ease;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    color:#e0002a;
+    text-shadow: 0 0 10px #e0002a;
+}
+
+
+#home {
+    min-height: calc(100vh - 80px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    padding: 40px 6%;
+    gap: 40px;
+}
+
+#home > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    width: min(2000px, 100%);
+    max-height: 150vh;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px #e0002a);
+            
+}
+#home > div:last-child {
+    max-width: 600px;
+}
+
+#home h1 {
+    font-size: clamp(50px, 7vw, 90px);
+    line-height: 0.95;
+    margin: 10px 0;
+    text-shadow: 0 0 10px white;
+}
+
+#home h2 {
+    color: #e0002a;
+    font-size: clamp(25px, 3vw, 40px);
+    margin-bottom: 20px;
+}
+
+#home > div:last-child > a {
+    display: inline-block;
+
+    margin-top: 30px;
+    margin-right: 12px;
+    padding: 14px 24px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 1px solid #e0002a;
+}
+#home > div:last-child > a:first-of-type {
+    background: #e0002a;
+    color: #ffffff;
+}
+#home > div:last-child > a:last-of-type {
+    color: #ffffff;
+}
+.Me {
+    font-size: 20px;
+    font-weight: 500;
+}
+.roles {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#ffffff;
+}
+.cursor {
+    margin-left: 3px;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.particles {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.particles span {
+    position: absolute;
+    bottom: -20px;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: #e0002a;
+
+    box-shadow:
+        0 0 5px #e0002a,
+        0 0 12px rgba(224, 0, 42, 0.8);
+
+    animation: rise 7s linear infinite;
+}
+
+.particles span:nth-child(1)  { left: 5%;  animation-delay: 0s; }
+.particles span:nth-child(2)  { left: 12%; animation-delay: 2s; }
+.particles span:nth-child(3)  { left: 20%; animation-delay: 4s; }
+.particles span:nth-child(4)  { left: 28%; animation-delay: 1s; }
+.particles span:nth-child(5)  { left: 35%; animation-delay: 3s; }
+.particles span:nth-child(6)  { left: 43%; animation-delay: 5s; }
+.particles span:nth-child(7)  { left: 51%; animation-delay: 2.5s; }
+.particles span:nth-child(8)  { left: 58%; animation-delay: 1.5s; }
+.particles span:nth-child(9)  { left: 65%; animation-delay: 4.5s; }
+.particles span:nth-child(10) { left: 72%; animation-delay: 0.5s; }
+.particles span:nth-child(11) { left: 79%; animation-delay: 3.5s; }
+.particles span:nth-child(12) { left: 85%; animation-delay: 5.5s; }
+.particles span:nth-child(13) { left: 90%; animation-delay: 2.8s; }
+.particles span:nth-child(14) { left: 95%; animation-delay: 4.2s; }
+.particles span:nth-child(15) { left: 48%; animation-delay: 6s; }
+.particles span:nth-child(16) { left: 15%; animation-delay: 6.5s; }
+.particles span:nth-child(17) { left: 32%; animation-delay: 7s; }
+.particles span:nth-child(18) { left: 67%; animation-delay: 5.2s; }
+.particles span:nth-child(19) { left: 82%; animation-delay: 1.8s; }
+.particles span:nth-child(20) { left: 55%; animation-delay: 3.8s; }
+
+
+@keyframes rise {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(0);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+        transform:
+            translate(5px, -10vh)
+            scale(1);
+    }
+
+    40% {
+        transform:
+            translate(-15px, -40vh)
+            scale(0.8);
+
+        opacity: 0.8;
+    }
+
+    70% {
+        transform:
+            translate(20px, -70vh)
+            scale(0.6);
+
+        opacity: 0.5;
+    }
+
+    100% {
+        transform:
+            translate(-10px, -110vh)
+            scale(0);
+
+        opacity: 0;
+    }
+}
+.stat {
+    color: lime;
+    text-decoration: dotted;
+    font-weight: 300;
+    text-shadow: 0 0 5px lime;
+}
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 900;
+}
+/* CONTACT DROPDOWN */
+
+.contact-dropdown {
+    position: relative;
+}
+
+.contact-btn {
+    background: none;
+    border: none;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.contact-btn span {
+    color: #ff1a1a;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.contact-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    width: 180px;
+
+    background: rgba(8, 8, 8, 0.95);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.15),
+        inset 0 0 15px rgba(255, 0, 0, 0.03);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: 0.25s ease;
+
+    z-index: 1000;
+}
+
+/* Show dropdown when hovering */
+
+.contact-dropdown:hover .contact-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.contact-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    color: #ccc;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.contact-menu a span {
+    width: 20px;
+    color: #ff1a1a;
+    text-align: center;
+}
+
+.contact-menu a:hover {
+    color: white;
+    background: rgba(255, 0, 0, 0.12);
+
+    padding-left: 20px;
+}
+
+.contact-menu a:hover span {
+    color: #ff3333;
+}
+/* =========================
+   LOADING SCREEN
+========================= */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #050505;
+
+    transition: opacity 0.45s ease;
+}
+
+#loader.loaded {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-content {
+    width: min(420px, 80%);
+    text-align: center;
+}
+
+.loader-logo {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #e90a0a;
+
+    text-shadow:
+        0 0 10px rgba(233, 10, 10, 0.8),
+        0 0 25px rgba(233, 10, 10, 0.35);
+
+    margin-bottom: 18px;
+
+    animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
+.loader-status {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.loader-bar {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.loader-progress {
+    width: 0%;
+    height: 100%;
+    background: #e90a0a;
+
+    box-shadow: 0 0 10px rgba(233, 10, 10, 0.8);
+
+    transition: width 0.07s linear;
+}
+
+.loader-percent {
+    margin-top: 10px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #e90a0a;
+}
+
+
+/* Logo animation */
+
+@keyframes loaderPulse {
+    0%,
+    100% {
+        opacity: 0.65;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* Respect reduced-motion settings */
+
+@media (prefers-reduced-motion: reduce) {
+    #loader {
+        transition: none;
+    }
+
+    .loader-logo {
+        animation: none;
+    }
+
+    .loader-progress {
+        transition: none;
+    }
+}
+@media (max-width: 760px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-position: left;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+    background: rgba(10, 10, 10, 0.65);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);    
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+header > a {
+    color: #e90a0a;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    text-shadow: 0px 0px 5px #e0002a, 0px 0px 20px rgb(255, 0, 0, 0.5);
+
+}
+
+nav {
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    color:#e0002a;
+    text-shadow: 0 0 10px #e0002a;
+}
+
+#home > div:first-child {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+#home img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 200vh;
+    object-fit: contain;
+    opacity: 0%;   
+}
+#home > div:last-child {
+    position: relative;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+
+#home h1 {
+    
+    font-size: clamp(70px, 7vw, 90px);
+    line-height: 1;
+    margin: 10px 0;
+    text-shadow: 0 0 10px white;
+}
+
+#home h2 {
+    color: #e0002a;
+    font-size: clamp(25px, 3vw, 40px);
+    margin-bottom: 20px;
+}
+
+
+
+}
